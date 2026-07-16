@@ -27,7 +27,6 @@ df <- merge(
   by = c("FID", "IID")
 )
 
-setwd("/Drives/K/aawada/Projects/GWAS_data/_Fine_Mapping_Epistasis")
 fwrite(df[, .(FID)], "EUR_FIDs.txt", col.names = FALSE)
 
 # Check who still has VL but is not in genotype
@@ -182,6 +181,7 @@ top_snps <- imp_final$SNP[1:n_top]
 
 # -----------------------------
 # THIS EXAMPLE USES HLA-B*57 DOSAGE AS A COVARIATE, YOU MAY CHOOSE TO EXCLUDE IN PAIRWISE TESTING
+
 # LOAD B57 DOSAGE DATA, CALCULATE IT BEFOREHAND USING SNP2HLA 
 # -----------------------------
 
