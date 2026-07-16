@@ -1,5 +1,7 @@
 #Custom Epistasis Pipeline
+
 #Preprocess and filter files using PLINK to QC standards you require in bash
+
 #Rscript
 
 library(data.table)
