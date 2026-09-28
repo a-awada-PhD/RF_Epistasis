@@ -1,8 +1,8 @@
-#Custom Epistasis Pipeline
+# Custom Epistasis Pipeline
 
-#Preprocess and filter files using PLINK to QC standards you require in bash
+# Preprocess and filter files using PLINK to QC standards you require in bash
 
-#Rscript
+# Rscript
 
 library(data.table)
 library(ranger)
