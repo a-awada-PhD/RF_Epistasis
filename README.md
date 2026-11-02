@@ -45,8 +45,8 @@ if (length(drop_cols) > 0) {
 df[, VL := as.numeric(VL)]
 df[, Sex := as.numeric(Sex)]
 
-# Keep only complete cases for outcome and sex
-df <- df[!is.na(VL) & !is.na(Sex)]
+# Keep only complete cases
+df <- df[!is.na(VL)]
 
 # Exclude non-SNP columns
 snp_cols <- setdiff(names(df), c("FID", "IID", "VL", "Sex", "PC1", "PC2", "PC3", "PC4", "PC5"))
